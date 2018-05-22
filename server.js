@@ -5,6 +5,8 @@ var bodyparser  = require('body-parser')
 var cheerio  = require('cheerio')
 var request  = require('request')
 
+var PORT = process.env.PORT || 3000;
+
 var app = express()
 
 app.use(express.static('public'))
@@ -18,6 +20,6 @@ mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
 
-app.listen(3000, function() {
-    console.log("App running on port 3000!");
+app.listen(PORT, function() {
+    console.log("App running on port " + PORT);
   });
