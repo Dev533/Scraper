@@ -1,4 +1,7 @@
 
+// B-Money, I need to modify this code below to match with my scraper. Pulled this as a template from one
+// of the class exercises and modifying accordingly.
+
 var express = require("express");
 var mongojs = require("mongojs");
 
